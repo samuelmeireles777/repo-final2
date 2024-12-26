@@ -1,51 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="./style/style.css">
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+         emailjs.init({
+             publicKey: "8xfpz--fBS5n6LQgb",
+        });
+        })();
+    </script>   
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <meta charset="UTF-8">
+    <title>portifolio</title>
 </head>
-<body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link " href="index.html">home</a>
-            <a class="cabecalho__menu__link" href="./about.HTML">sobre mim</a>
-        </nav>
-    </header> 
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">
-                Eleve seu negócio digital a outro nível 
-                <strong class="titulo-destaque">com um Front-end de qualidade!
-                </strong></h1>
-                <p class="apresentacao__conteudo__texto">Olá! Sou Joana Santos, desenvolvedora 
-                Front-end com especialidade em React, HTML e
-                CSS. Ajudo pequenos negócios e designers a 
-                colocarem em prática boas ideias. Vamos 
-                conversar?</p>                
-                <div class="apresentacao__links">
-                    <h2 class="apresentacao__links__subtitulo">acesse minhas redes</h2>
-                    <a class="apresentacao__links__link" href="github.com">
-                            <img src="./Assets/github.png" alt="logo github">
-                            github
-                    </a>
-                    <a class="apresentacao__links__link" href="github.com"> 
-                        <img src="./Assets/linkedin.png" alt="logo linkedin" >
-                        linkedin
-                    </a>
-                    <a class="apresentacao__links__link" href="github.com">
-                        <img src="./Assets/instagram.png" alt="instagram logo">
-                        instagram
-                    </a>
-                </div>
 
+<body>
+    <header class="topo__pagina"> 
+        <p class="meu__nome">sssssssssssssssss</p>
+
+        <nav class="lista__nav">
+           <a class="listanav2" href="">skills</a>
+           <a class="listanav2"href="">projetos</a>
+           <a class="listanav2" href="">formaçao</a>
+           <a class="listanav2" href="">email </a>
+         </nav> 
+    </header>
+
+    <main class="container__principal">
+        <section class="conteudo__principal">
+
+             <div class="contprinci">
+                    <div class="apresentacao">
+                        <h1 class="txt__apresentaçao">ola meu nome é samuel meireles dos santos</h1>
+                        <p class="txt__apresentaçao__p">" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Nullam ac semper ligula. Curabitur non libero purus. Integer at leo sit amet elit auctor luctus. Mauris nec ante et urna tempus suscipit. Ut ac erat a urna tristique ullamcorper. Aliquam erat volutpat. Aenean pharetra nisi eu augue condimentu" </p>
+                    </div>
+
+                    <div class="imglugar"> 
+                         <img  class="imgLogo" src="/styles/Strange Harbors Film Review _ Black Panther.jpeg" alt="desenho do blackpanther">
+                    </div>
+             </div>
+        
+             <div class="sobre__mim">
+                 <h2 class="about__me">sobre mim</h2>
+                 <p class="about__me__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Nullam ac semper ligula. Curabitur non libero purus. Integer at leo sit amet elit auctor luctus. Mauris nec ante et urna tempus suscipit. Ut ac erat a urna tristique ullamcorper. Aliquam erat volutpat. Aenean pharetra nisi eu augue condimentum, et auctor erat tristique. Sed feugiat, ipsum ac vulputate cursus, odio nunc feugiat nisi, in sodales orci ante at mauris. Maecenas tempor viverra feugiat. Nulla et nunc nec augue lobortis tincidunt et eget ligula. Sed id felis et purus vestibulum pharetra eget vel magna. Nam eget quam ut sapien euismod posuere a et orci.
+                </p>
+             </div>
         </section> 
-            <img class="apresentacao__imagem" src="./Assets/joana.png" alt="Foto da Joana Santos programando">
+
+        <section class="projetos">
+
+            <h1 class="txtexp">experiencia profissional</h1>
+            
+            <div class="imagemda__boneca">
+                <a href="https://decodificador-projetoalura-9jgr.vercel.app/" style="font-family: 'raleway',sans-serif; font-weight: 900; font-size: 13px;color:rgba(55, 213, 171, 0.603);">decodificador</a>
+                <img class="imagemdaboneca" src="/styles/Rectangle (1).png" alt="">
+            </div>
+            <div class="imagemda__boneca">
+                <a href="https://github.com/samuelmeireles777/Jogonumerosecreto" style="font-family: 'raleway',sans-serif; font-weight: 900; font-size: 13px; color:rgba(55, 213, 171, 0.603);"> numero secreto</a>
+                <img class="imagemdaboneca" src="/styles/numero secreto.png" alt="">
+            </div>
+            <div class="jogoda__forca" >
+                <a href=""></a>
+                <img src="" alt="">
+            </div>
+        </section>
+
+          <div class="skills__part">
+                <h4 class="fontskills" >SKILLS </h4>
+
+                <div  class="skills__elementos">
+                    <div class="skills__elementos__area"><img src="/styles/react.png" alt="">
+                        <p style="font-size: 16px; font-weight: 700; font-family: 'raleway',sans-serif;">react</p> 
+                    </div>
+                    <div class="skills__elementos__area"><img src="/styles/html5.png" alt="">
+                        <p style="font-size: 16px; font-weight: 700; font-family: 'raleway',sans-serif;">html</p>
+                    </div>
+                    <div class="skills__elementos__area"><img src="/styles/js.png" alt="">
+                         <p style="font-size: 16px;font-weight: 700;font-family: 'raleway',sans-serif;">javascript</p>
+                    </div>
+                    <div class="skills__elementos__area"><img src="/styles/php.png" alt="">
+                        <p style="font-size: 16px; font-weight: 700; font-family: 'raleway',sans-serif;">php</p>
+                    </div>
+                </div>    
+           </div>
+
+        <section class="contato__part">
+
+            <h3 class="contato__titulo">CONTATO</h3>
+            <p class="contato__fonte">quer entrar em contato comigo?
+                preencha o formulario e entrarei em contato mais rapido possivel.
+            </p>
+             
+            <div class="osinput">
+                <form class="osinput" id="contatosend">
+                    <input class="inputconfig" id="nomecontato" placeholder="Nome" type="text">
+                    <input class="inputconfig" id="emailcontato" placeholder="Email" type="email">
+                    <input class="inputconfig" id="mensagemconteudo" placeholder="Assunto" type="text">
+                    <button class="botaocontato" type="submit" style="font-family: 'Raleway',sans-serif;font-size: 13px; font-weight: 900;">ENVIAR</button>
+                </form>
+                <div id="confirmacaomensagem"></div> 
+            </div>
+            
+
+        </section>
     </main>
-    <footer>
-        <p class="rodape">desenvolvido por samuel meireles</p>
-    </footer>
+
+    <footer>  </footer>  
+    <script src="contato.js"></script>  
 </body>
+
 </html>

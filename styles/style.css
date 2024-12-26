@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+
+body{
+display: flex;
+flex-direction: column;
+height:100vh;
+width: 1468px;
+box-sizing:border-box;
+align-items: center;
+margin: 0; 
+padding: 0;
+}
+
+.container__principal{
+    display: flex;
+    flex-direction: column;
+    height:5032px;
+    width: 1468px;
+    box-sizing:border-box;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    animation-name: cores;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes cores{
+    0%{background-color: rgba(61, 53, 55, 0.082);}
+    25%{ background-color: rgba(22, 23, 24, 0.64);}
+    50%{background-color: rgba(37, 35, 38, 0.937);}
+    100%{background-color: #202222e0;}
+}
+
+@keyframes contatoanimado{
+    50%{color: rgba(55, 213, 171, 0.603);}
+    100%{ color: rgba(13, 89, 112, 0.966);}
+}
+
+.topo__pagina{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 77.4%;
+    height: 88px;
+    gap: 40px;
+}
+.lista__nav{
+    display: flex;
+    width: 56.5%;
+    justify-content: space-evenly;
+}
+ .listanav2{
+    color: inherit;
+    text-decoration: none;
+ }
+ 
+.conteudo__principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width:1140px ;
+   height:766px;
+   justify-content: center;
+}
+.contprinci{
+    width: 1136px;
+    height: 368px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    justify-content: center;
+}
+.imglugar{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.sobre__mim{
+    width:1136px;
+    height:368px;
+}
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    width: 1136px;
+    height: 1816px;
+}
+.skills__part{
+    width: 77.37%;
+    height: 7.85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.fontskills{
+    font-family: 'raleway', sans-serif;
+    font-size: 32px; 
+    font-weight: 700;
+}
+
+.skills__elementos{
+    width: 100%;
+    height: 71.2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 10px;
+}
+.skills__elementos__area{
+     width: 6.82%;
+     height: 42.53%;
+}
+
+
+.contato__part{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1136px;
+    height: 785px;
+   justify-content: space-around;
+}
+ .osinput{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ width:656px;
+ height: 660px;
+ align-items: center;
+ 
+ }
+ .inputconfig{
+    border: none;
+  width: 100%;
+  height: 13%;
+  background-color: cornsilk;
+ }
+
+
+
+
+.botaocontato{
+    height: 12%;
+    width: 25%;
+    background-color: rgba(2, 4, 12, 0.32);
+    border: none;
+    animation:contatoanimado 5s infinite
+    
+}
+ .imgLogo{
+    border-radius: 70%;
+    width: 328px;
+    height: 328px;
+    object-fit: cover;
+ }
+ /*decoracao dos textos*/
+
+ .txt__apresentaçao{
+    font-family: 'raleway', sans-serif;
+    font-weight: bold;
+   }
+   .txt__apresentaçao__p{
+    font-family: 'raleway', sans-serif;
+    font-weight: 400;
+}
+
+.about__me{
+    font-family: 'raleway', sans-serif;
+}
+.about__me__p{
+    font-family: 'raleway', sans-serif;
+}
+
+.txtexp{
+    font-family: 'raleway', sans-serif;
+    font-weight:600;
+    font-size: 32px;
+}
+.contato__titulo{
+ font-family:'jersey 10', sans-serif;
+ font-weight: 500;
+ font-size: 42px ;
+ animation:contatoanimado 5s infinite ;
+}
+
+.contato__fonte{
+    font-family: 'raleway', sans-serif;
+    font-weight: 500;
+}
+
+/*deixando responsivo*/
+@media(max-width:768px){
+    body{
+        width: 768px;
+        height:4379px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .container__principal{
+        flex-direction: column;
+        align-items: center;
+        height:4379px;
+        width: 768px;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+    }
+    .topo__pagina{
+        width: 100%;
+        height: 1.28%;
+    }
+
+    .conteudo__principal{
+        width: 100%;
+        height: 525px;
+    }
+
+    .contprinci{
+        width: 100%;
+        height: 50%;
+        flex-grow: 0;
+    }
+
+    .apresentacao{
+        width:68%;
+        height: 62%;
+    }
+    .imglugar{
+        width: 19%;
+        height: 60%;
+    }
+    .imgLogo{
+              width: 100%;
+              height: 100%; 
+             }
+
+
+    .sobre__mim{
+
+                width: 100%;
+                height: 55%;
+    }
+
+    .projetos{
+              width: 100%;
+              height:50%;
+    }
+    .imagemda__boneca{
+        width: 100%;
+        height: 15.87%;
+
+    }
+    .imagemdaboneca{
+        width: 91.67%;
+        height: 100%;
+    }
+
+    .contato__part{width: 39%;
+                   height: 17%;
+                 }
+  
+    .osinput{
+        width: 79%;
+        height: 90%;
+    }
+    .botaocontato{
+        width: 46%;
+    }
+    .inputconfig{
+       width:100%;
+       height:11% ;
+   }     
+            
+}
+
+        /*mobile*/
+
+@media(max-width:360px){
+    body{
+        
+        width: 360px;
+        height:4475px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .container__principal{
+        flex-direction: column;
+        align-items: center;
+        height: 4475px;
+        width: 360px;
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .conteudo__principal{
+        width: 100%;
+        height:14.39%;
+    }
+
+    .contprinci{
+        width: 100%;
+        height:46.30%;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        gap: 0px
+    }
+
+    .apresentacao{
+        width: 325px;
+        max-width: none;    
+        height: 62%;
+    }
+
+    .imglugar{
+       position: relative;
+       right: 125px;
+        width: 27.22%;
+        height: 33.33%;
+    }
+
+    .imgLogo{
+              width: 100%;
+              height: 100%; 
+             }
+
+
+    .sobre__mim{
+
+                width: 100%;
+                height: 55.12%;
+    }
+
+    .projetos{
+              width: 100%;
+              height:29.52%;
+    }
+
+    
+.skills__part{
+    width: 100%;
+    height: 11.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.fontskills{
+    font-family: 'raleway', sans-serif;
+    font-size: 22px; 
+    font-weight: 700;
+}
+
+.skills__elementos{
+    width: 91.2%;
+    height: 71.2%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.skills__elementos__area{
+     width: 37.82%;
+     height: 42.53%;
+}
+  
+    
+    .imagemda__boneca{
+        width: 82.22%;
+        height:18%;
+
+    }
+    .imagemdaboneca{
+        width: 100%;
+        height: 61.28%;
+    }
+
+    .contato__part {
+        width: 100%;
+        height: 15.28%;
+    }
+    .contato__titulo{
+        font-size: 30px;
+    }
+    .contato__fonte{
+        font-size: 90%;
+        line-height: 18.68px;
+        margin-left: 22px;
+    }
+    .osinput{
+        width: 82.22%;
+        height: 58.74%;
+    }
+    .inputconfig{
+       width:100%;
+       height:14%;
+   }     
+            /*textos font-size*/
+
+   .txtexp{
+        width: 70%;
+        height:2%;
+        white-space:nowrap;
+        font-size: 22px;
+    }         
+    .txt__apresentaçao{
+      
+       font-size: 22px;     
+      
+    }
+
+    .txt__apresentaçao__p{
+       font-size: 14px;     
+    }
+    .about__me{
+        font-size: 22px;
+
+    }
+    .about__me__p{
+        font-size: 14px;
+
+    }
+
+    .botaocontato{
+      height: 12%;
+
+    }
+
+
+}
